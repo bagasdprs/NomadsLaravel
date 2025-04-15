@@ -43,7 +43,7 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <img src="{{ asset('FRONTEND/images/avatar-1.png')}}" height="60" />
+                                                <img src="{{ asset('FRONTEND/images/avatar-1.png') }}" height="60" />
                                             </td>
                                             <td class="align-middle">
                                                 Bagas Dwiprasandi
@@ -59,7 +59,8 @@
                                             </td>
                                             <td class="align-middle">
                                                 <a href="#">
-                                                    <img src="{{ asset('FRONTEND/images/ic_remove.png') }}" alt="" />
+                                                    <img src="{{ asset('FRONTEND/images/ic_remove.png') }}"
+                                                        alt="" />
                                                 </a>
                                             </td>
                                         </tr>
@@ -178,7 +179,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="bank-item pb-3">
-                                    <img src="{{asset('FRONTEND/images/ic_bank.png')}}" class="bank-image" />
+                                    <img src="{{ asset('FRONTEND/images/ic_bank.png') }}" class="bank-image" />
                                     <div class="description">
                                         <h3>PT Nomads ID</h3>
                                         <p>
@@ -192,12 +193,12 @@
                             </div>
                         </div>
                         <div class="join-container">
-                            <a href="success.html" class="btn btn-block btn-join-now mt-3 py-2">
+                            <a href="{{ route('checkout-success') }}" class="btn btn-block btn-join-now mt-3 py-2">
                                 I Have Made Payment
                             </a>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="details.html" class="text-muted">
+                            <a href="{{ route('detail') }}" class="text-muted">
                                 Cancel Booking
                             </a>
                         </div>
